@@ -4,7 +4,7 @@ This demo is self contained, no extra hardware or networking rules required. Req
 * an internet connection
 * Docker (tested on a Mac with Docker Desktop)
 * authorization to build containers
-* authorization to forward priv'd host ports (this binds to port 80, please don't do this on a prod web server!!!)
+* authorization to forward host ports (this binds to host port 8080, change docker-compose.yml if you need a different port)
 
 Clone this repo and use docker-compose to bring up the environment.
 
