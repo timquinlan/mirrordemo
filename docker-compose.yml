@@ -1,0 +1,36 @@
+version: '3.3'
+services:
+  # NGINX basic appservers
+  app1:
+      hostname: app1
+      build: appserver
+      expose:
+        - "80"
+  app2:
+      hostname: app2
+      build: appserver
+      expose:
+        - "80" 
+  app3:
+      hostname: app3
+      build: appserver
+      expose:
+        - "80" 
+  mirror1:
+      hostname: mirror1
+      build: appserver
+      expose:
+        - "80" 
+  mirror2:
+      hostname: mirror2
+      build: appserver
+      expose:
+        - "80" 
+  apigw:
+      hostname: apigw
+      build: apigw
+      volumes:
+          - ./apigw/etc/nginx:/etc/nginx
+      ports:
+          - 80:80
+      restart: always
