@@ -1,10 +1,10 @@
 # Traffic Mirroring Demo
 
 This demo is self contained, no extra hardware or networking rules required. Requirements are:
-* an internet connection
-* Docker (tested on a Mac with Docker Desktop)
+* docker
+* docker-compose
 * authorization to build containers
-* authorization to forward host ports (this binds to host port 8080, change docker-compose.yml if you need a different port)
+* authorization to forward host ports
 
 Clone this repo and use docker-compose to bring up the environment.
 
