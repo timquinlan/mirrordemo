@@ -5,6 +5,7 @@ This demo is self contained, no extra hardware or networking rules required. Req
 * docker-compose
 * authorization to build containers
 * authorization to forward host ports
+* port 8080 open on the host (if you need to use a different port, change docker-compose.yml)
 
 Clone this repo and use docker-compose to bring up the environment:
 
