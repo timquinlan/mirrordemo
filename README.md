@@ -14,4 +14,5 @@ Clone this repo and use docker-compose to bring up the environment.
     $ curl http://localhost:8080/test
 
 You can use ab to do some basic load testing
+
     $ ab -n 100 -c 10 http://localhost:8080/
