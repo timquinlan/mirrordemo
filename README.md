@@ -9,6 +9,7 @@ This demo is self contained, no extra hardware or networking rules required. Req
 Clone this repo and use docker-compose to bring up the environment.
 
     $ git clone https://www.github.com/timquinlan/mirrordemo
+    $ cd mirrordemo
     $ docker-compose up
     $ curl http://localhost:8080/test
 
