@@ -12,7 +12,7 @@ Clone this repo and use docker-compose to bring up the environment:
     cd mirrordemo
     docker-compose up
 
-Open a 2nd terminal window and use curl to see if it worked:
+Open a 2nd terminal window and test with curl:
 
     curl http://localhost:8080/test
 
