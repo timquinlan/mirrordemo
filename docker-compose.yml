@@ -29,8 +29,10 @@ services:
   apigw:
       hostname: apigw
       build: apigw
+      #mount project dir as pv
       volumes:
           - ./apigw/etc/nginx:/etc/nginx
+      #direct hostport 8080 to container port 80
       ports:
           - 8080:80
       restart: always
