@@ -17,6 +17,19 @@ Open a 2nd terminal window and test with curl:
 
     curl http://localhost:8080/test
 
-From the 2nd terminal window use the ab to do some load testing
+From the 2nd terminal window use the ab to do some load testing:
 
     ab -n 100 -c 10 http://localhost:8080/
+    
+Container layout:
+
+                                       Clients
+                                           |
+                                           |
+                                           |                       --- Mirror1
+                                       Apigw --------------|
+                                           |                       --- Mirror2
+                                  ------------------
+                                  |          |         |                            
+                               App1  App2  App3                  
+<img width="317" alt="image" src="https://user-images.githubusercontent.com/14811185/155863603-f15ce819-3dbb-4642-a071-6d81cf75cfec.png">
