@@ -26,10 +26,9 @@ Container layout:
                                        Clients
                                            |
                                            |
-                                           |                       --- Mirror1
+                                           |               --- Mirror1
                                        Apigw --------------|
-                                           |                       --- Mirror2
+                                           |               --- Mirror2
                                   ------------------
-                                  |          |         |                            
-                               App1  App2  App3                  
-<img width="317" alt="image" src="https://user-images.githubusercontent.com/14811185/155863603-f15ce819-3dbb-4642-a071-6d81cf75cfec.png">
+                                |          |         |                            
+                               App1       App2      App3                  
