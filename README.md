@@ -21,13 +21,9 @@ From the 2nd terminal window use the ab to do some load testing:
     ab -n 100 -c 10 http://localhost:8080/
     
 Container layout:
-
-                                       Clients
-                                           |
-                                           |
-                                           |               --- Mirror1
-                                       Apigw --------------|
-                                           |               --- Mirror2
+                                                              --- Mirror1
+                           Clients ----> Apigw --------------|
+                                           |                  --- Mirror2
                                   ------------------
                                 |          |         |                            
                                App1       App2      App3                  
